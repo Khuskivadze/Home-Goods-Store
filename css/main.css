@@ -1,0 +1,145 @@
+:root{
+    --color_0: rgb(255,255,255);        
+    --color_1:  rgb(0,0,0);
+    --backgroundColor:rgb(232,229,155);
+    --titleColor: rgb(64,63,43);
+    --BigTitleColor: rgb(255,253,195);
+    --section:rgb(196,193,151);
+    --section2:rgb(221,221,204);
+    --font-family-1: 'Roboto';
+    --font-family-2: 'Fraunces';
+    --border: 1px solid black;
+    --transition: all 0.5s ease-in-out;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+     
+    text-decoration: none;
+     
+    
+
+}
+body{
+    font-family: var(--font-family-1);
+   
+}
+a{
+    text-decoration: none;
+    color: var(--color_1);
+}
+button{
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn  {
+    width: 100px;
+    height: 25px;
+    border-radius: 1.3rem;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    background: rgb(254,250,240);
+    font-size: 1rem;
+    color: var(--titleColor);
+    font-family: 'Roboto';
+    font-weight: 400;
+    letter-spacing: .8px;  
+    transition: var(--transition);
+    
+     
+    
+}
+.btn:hover{
+    background: var(--titleColor);
+    color: var(--color_0);
+
+}
+header{        
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+    background: rgb(254,250,240);
+    
+     
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 10rem;
+
+} 
+.menu{
+    cursor: pointer;
+}
+.menu h1{
+    font-family:var(--font-family-2) ;
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: var(--titleColor);
+}
+.navbar-title h1{
+    font-size: 30px;
+    font-family:var(--font-family-2) ;
+    font-weight: normal;
+    color: var(--titleColor);
+}
+.navbar-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1px;
+    cursor: pointer;
+}
+.navbar-icons i {
+    font-size: 1.2rem;
+    color: var(--titleColor);
+}
+.header-brending {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../assets/brending-cover.jpg) center/cover   no-repeat fixed;    
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.breinding-title{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0.95;
+    text-align: center;
+}
+.breinding-title h1{
+    font-size: 315px;
+    font-family: var(--font-family-2);
+    color: var(--BigTitleColor);
+     
+}
+.breinding-title h4 {
+    line-height: normal;
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--font-family-2);
+    font-weight: normal;
+
+}
+
+.header-brending .btn {
+    margin: 50px 0;
+}
+
+
+
+
+
+ 
+
+
+ 
+ 
